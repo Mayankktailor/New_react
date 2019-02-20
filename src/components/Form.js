@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import { getOrder } from '../actions/formAction';
 import {connect} from 'react-redux';
 import { Button } from 'reactstrap';
