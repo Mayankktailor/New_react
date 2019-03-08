@@ -2,7 +2,8 @@ import {GET_POSTS,ADD_POST} from './types';
 
 export const getOrder = () => dispatch => {
     console.log("form Action");
-    fetch('http://localhost:5000/api/order')
+    //api call
+    fetch('http://xxx:5000/api/order')
       .then(res => res.json())
       .then(posts =>
         dispatch({
@@ -14,7 +15,8 @@ export const getOrder = () => dispatch => {
 
   export const AddPost = data => dispatch => {
     console.log("Inside Action..",data);
-    fetch('http://localhost:5000/api/order', {
+    //api call
+      fetch('http://xxx:5000/api/order', {
       method: 'POST',
       headers: {
         'content-type': 'application/json'
