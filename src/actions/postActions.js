@@ -2,7 +2,8 @@ import { FETCH_POSTS, NEW_POST,DELETE_POST, UPDATE_POST } from './types';
 import axios from 'axios';
 
 export const fetchPosts = () => dispatch => {
-  fetch('http://localhost:5000/api/productes')
+  //api call
+  fetch('http://xxx:5000/api/productes')
     .then(res => res.json())
     .then(posts =>
       dispatch({
@@ -13,7 +14,8 @@ export const fetchPosts = () => dispatch => {
 };
 
 export const createPost = postData => dispatch => {
-  fetch('http://localhost:5000/api/productes', {
+  //api call
+  fetch('http://xxx:5000/api/productes', {
     method: 'POST',
     headers: {
       'content-type': 'application/json'
